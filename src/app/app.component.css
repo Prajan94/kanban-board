@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    overflow-y: scroll;
+}
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #f0f0f0;;
+    color: black;
+    width: 200px;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.main-header {
+    width: 100%;
+    color: rgb(4, 4, 4);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.kanban-column {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.kanban-column h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    height:5rem;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 1.75rem;
+}
+
+.kanban-card {
+    background-color: #fffffd;
+    border-radius: 4px;
+    padding: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+    max-width: 1200px;
+    margin-top:1rem;
+}
+
+  /* Column Heading Colors */
+.todo-heading {
+    background-color: #ea8a83; /* Red for To Do */
+}
+
+.implementing-heading {
+    background-color: #deaf68; /* Orange for Implementing */
+}
+  .done-heading {
+    background-color: #7ef282; /* Green for Done */
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .secondary-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  /* Form container styling */
+.form-container {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Form styling */
+  form {
+    display: flex;
+  }
+  
+  /* Input and textarea styling */
+  input[type="text"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+.toaster-success {
+    text-align: left;
+    width: 99%;
+    color: #090909;
+    font-weight: 500;
+    font-size: 20px;
+    height: 10%;
+    padding:1.5rem;
+    background-color: #93e3a3;
+  }
+  .toaster-alert {
+    text-align: left;
+    width: 99%;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    height: 10%;
+    padding:1.5rem;
+    background-color: #e91e43;
+  }
+
+.status-text {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+.alert-red {
+    color:red;
+  }
+
+  .float-right {
+    float: right;
+  }
+.mt-1 {
+    margin-top: 1.5rem;
+  }
+.mb-1 {
+    margin-bottom: 1.5rem;
+  }
+.float-left {
+    float: left;
+  }  
+.cursor-pointer {
+    cursor:pointer
+  }
+.ml-1 {
+    margin-left: 0.5rem;
+  }
+.h-30 {
+    height:30%
+  }
